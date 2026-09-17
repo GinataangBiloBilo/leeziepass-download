@@ -1,5 +1,7 @@
 # LeeziePass
 
+[![Downloads](https://img.shields.io/github/downloads/GinataangBiloBilo/leeziepass-download/total.svg)](../../releases/latest)
+
 A memorable password generator for IT admins — a small Windows GUI tool, no
 install, no dependencies, single portable `.exe`.
 
