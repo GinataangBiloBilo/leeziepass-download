@@ -1,0 +1,43 @@
+name: Bug report
+description: Something in LeeziePass doesn't work as expected
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Security problems? Please don't file them here — see [SECURITY.md](https://github.com/GinataangBiloBilo/leeziepass-download/blob/master/SECURITY.md).
+  - type: input
+    id: version
+    attributes:
+      label: LeeziePass version
+      description: Shown under "About LeeziePass" (right-click the title bar).
+      placeholder: "1.0.1"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: "Windows 11 24H2"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Check "German" only
+        2. Click Generate Passwords
+        3. ...
+  - type: textarea
+    id: wordlist
+    attributes:
+      label: Custom wordlist (if relevant)
+      description: If the problem involves a custom wordlist, describe it or attach a small sample. Don't attach anything sensitive.
