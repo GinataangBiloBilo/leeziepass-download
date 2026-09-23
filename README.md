@@ -18,6 +18,7 @@ Grab the latest release from the [Releases page](../../releases/latest):
 - `leeziepass.exe` — the app. Just run it, nothing to install.
 - `sample-wordlist.txt` — a small demo wordlist to try the custom-wordlist
   feature (see below).
+- `LICENSE.txt` — the license terms (free to use, no warranty).
 - `SHA256SUMS.txt` — checksums for the above, if you want to verify your
   download before running it.
 
