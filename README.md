@@ -5,11 +5,16 @@
 A memorable password generator for IT admins — a small Windows GUI tool, no
 install, no dependencies, single portable `.exe`.
 
-Diceware-style: it picks 1–3 random words from a wordlist, optionally applies
-phonetic spelling-confusion swaps (so the words *sound* the same but are
-harder to guess by typing the "obvious" spelling), then adds a 2–4 digit
-number and a special character at randomised positions. Every password gets
-at least one uppercase and one lowercase letter, a digit, and a symbol.
+Diceware-style: it picks random words from a wordlist (usually 1–3, more for
+long passwords), optionally applies phonetic spelling-confusion swaps (so the
+words *sound* the same but are harder to guess by typing the "obvious"
+spelling), then adds a 2–4 digit number and a special character at
+randomised positions. Every password gets at least one uppercase and one
+lowercase letter, a digit, and a symbol, and stays within the length range
+you set. Randomness comes from the Windows system random number generator.
+
+The built-in wordlists have been cleaned of words you wouldn't want to hand
+to a user (profanity, insults, slurs, and the like).
 
 ## Download
 
@@ -35,8 +40,9 @@ Compare the printed hash against the one in `SHA256SUMS.txt`.
 1. Pick which built-in wordlists feed the generator: **Dutch**, **German**,
    **English** — check any combination, they get combined into one pool.
 2. Toggle **Phonetic transforms** if you want the spelling-confusion swaps.
-3. Click **Generate Passwords** for 5 candidates, and **Copy** the one you want.
-4. **Export to .txt** writes a batch of freshly generated passwords (you
+3. Set the **Length** range (8 to 40 characters, default 14 to 20).
+4. Click **Generate Passwords** for 5 candidates, and **Copy** the one you want.
+5. **Export to .txt** writes a batch of freshly generated passwords (you
    choose how many) to a text file, one per line — handy for provisioning
    several accounts at once.
 
